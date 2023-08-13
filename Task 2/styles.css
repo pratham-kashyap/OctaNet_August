@@ -1,0 +1,169 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #35495e;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #e0f1f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Updated font */
+}
+
+.add-task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.add-task input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.add-task button {
+    padding: 8px 15px;
+    background-color: #35495e;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-task button:hover {
+    background-color: #53778a;
+    transform: scale(1.05);
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s;
+  display: inline-flex; /* Display the button as inline-flex to align icon */
+  align-items: center; /* Center align the icon vertically */
+  justify-content: center; /* Center align the icon horizontally */
+  width: 24px; /* Set a fixed width for the button */
+  height: 24px; /* Set a fixed height for the button */
+  border-radius: 50%; /* Make the button round */
+}
+
+.deleteButton i {
+  font-size: 16px; /* Adjust icon size */
+  line-height: 1; /* Remove extra space around the icon */
+}
+
+.deleteButton:hover {
+  color: red;
+}
+
+.task-list {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.task:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task input[type="checkbox"] {
+    margin-right: 8px;
+    transform: translateY(2px);
+}
+
+.task label {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters-container {
+    background-color: #35495e;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center; /* Center-align the filters */
+    align-items: center; /* Vertically align the filters */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the filters buttons */
+.filters button {
+    padding: 5px 15px;
+    margin-left: 3px;
+    margin-right: 3px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s, background-color 0.3s, border-radius 0.3s;
+    outline: none;
+}
+
+.filters button:hover {
+    color: #ffee58;
+    transform: scale(1.05);
+}
+
+.filters button.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.no-tasks {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+    color: #777;
+}
